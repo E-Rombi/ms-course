@@ -23,7 +23,7 @@ public class UserResource {
     }
 
     @GetMapping(value = "/search")
-    public ResponseEntity<User> findById(@RequestParam String email) {
+    public ResponseEntity<User> findByEmail(@RequestParam String email) {
 
         User user = repository.findByEmail(email).orElseThrow(() -> new RuntimeException("Not found !"));
         return ResponseEntity.ok(user);

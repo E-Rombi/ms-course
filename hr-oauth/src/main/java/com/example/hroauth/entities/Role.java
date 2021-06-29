@@ -1,5 +1,7 @@
 package com.example.hroauth.entities;
 
+import org.springframework.security.core.GrantedAuthority;
+
 public class Role {
 
     private Long id;
